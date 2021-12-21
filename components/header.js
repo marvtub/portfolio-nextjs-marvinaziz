@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
 
 function Header() {
-  const pageTitle = "Marvin Aziz | Webdev from Berlin";
+  const pageTitle = "Marvin Aziz | Web Development aus Berlin";
   const pageDescription = "Website designed by Marvin Aziz";
+  const logoPath = "/Logo/Logo_Marvin_Aziz_White_Blue_Trans1000x500.svg"
 
   return (
     <div>
@@ -11,15 +11,16 @@ function Header() {
         <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={pageDescription} />
-        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap');</style>
+        <link rel="shortcut icon" type="image/x-icon" href="/Favicon/Favicon_Marvin_Aziz_Blue_Trans.ico" />
+
+        <style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");</style>
       </Head>
 
-      <div className="navbar  p-8 flex justify-between items-center absolute w-full">
-        <div className="logo">
+      <div className="navbar  p-8 flex justify-between items-center absolute w-full ">
+        <div className="logo w-48 lg:w-60">
           <img
-            src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_229,h_133/https://marvinaziz.de/wp-content/uploads/2020/07/Logo-White-Trans.png"
-            height={80}
-            width={80}
+            src={logoPath}
+            width={270}
           />
         </div>
         <nav>
