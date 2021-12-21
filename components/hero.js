@@ -8,7 +8,7 @@ function Hero() {
       <div className="left-side w-6/12 flex items-center content-center pr-48 flex-row flex-wrap ">
         <h1 className="text-white text-6xl tracking-light w-full">
           Ich helfe Unternhmen
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-300 via-purple-500 to-blue-600"><br/> die gutes tun, gut auszusehen.</span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-300  to-[#033F73]"><br/> die gutes tun, gut auszusehen.</span>
         </h1>
         <Button href="#" text="Jetzt kontaktieren" />
       </div>
