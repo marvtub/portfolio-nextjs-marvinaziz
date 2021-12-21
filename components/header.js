@@ -16,17 +16,17 @@ function Header() {
         <style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");</style>
       </Head>
 
-      <div className="navbar  p-8 flex justify-between items-center absolute w-full ">
-        <div className="logo w-48 lg:w-60">
+      <div className="navbar z-10 p-8 flex justify-between items-center fixed w-full ">
+        <div className="logo w-36 md:w-48 lg:w-60">
           <img
             src={logoPath}
             width={270}
           />
         </div>
-        <nav>
+        <nav className="relative w-48">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 opacity-80 z-20 top-8 right-8 absolute hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer"
+            className="h-8 w-8 m-auto mr-0 opacity-80 z-20  hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="white"
