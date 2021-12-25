@@ -1,0 +1,8 @@
+[
+    {"name": "Home", "href":"/"},
+    {"name": "Projekte", "href":"#"},
+    {"name": "Leistungen", "href":"#"},
+    {"name": "About", "href":"/about"},
+    {"name": "Kontakt", "href":"#"},
+    {"name": "Impressum", "href":"#"}
+]

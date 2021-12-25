@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps, router }) {
 
 
   return (
-    <div className="bg-black">
+    <div className="bg-black scroll-smooth">
     <AnimatePresence exitBeforeEnter>
      <motion.div inital="initial" animate="animate" exit="exit" variants={pageTrans} key={router.route}>
       <Component {...pageProps} />
