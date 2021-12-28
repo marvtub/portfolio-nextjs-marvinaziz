@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useScrollPosition from "../components/customHooks/scrollPosition";
 import Menu from "../components/menu";
 
-function Header() {
+function Header( {dark, blur=true}) {
   const pageTitle = "Marvin Aziz | Web Development aus Berlin";
   const pageDescription = "Website designed by Marvin Aziz";
   const logoPath = "/Logo/Logo_Marvin_Aziz_White_Blue_Trans.svg";
@@ -16,6 +16,8 @@ function Header() {
 
   return (
     <div className="">
+          <Menu visible={menuVisible}  setMenuVisible={setMenuVisible} dark={dark} />
+
       <Head>
         <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -32,10 +34,9 @@ function Header() {
           type="text/css"
         />
       </Head>
-      <Menu visible={menuVisible}  setMenuVisible={setMenuVisible} />
       <div
-        className={`navbar z-10 md:p-8 pr-4 py-4 pl-2 flex  justify-between items-center transition-all duration-300 ease-in-out fixed w-full  ${
-          scrollPosition > 60
+        className={`navbar z-10 2xl:p-8 pr-4 py-4 pl-2 flex  justify-between items-center transition-all duration-300 ease-in-out fixed w-full  ${
+          scrollPosition > 60 && blur
             ? "backdrop-filter backdrop-blur-md bg-opacity-30 pt-1 pb-1"
             : null
         }
@@ -56,7 +57,7 @@ function Header() {
             className={`h-8 w-8 m-auto mr-0 opacity-80 z-20  hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer`}
             fill="none"
             viewBox="0 0 24 24"
-            stroke="white"
+            stroke={dark ? "black" : "white"}
           >
             <path
               strokeLinecap="round"
