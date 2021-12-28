@@ -13,9 +13,6 @@ const ProjectPage = () => {
   const { pid } = router.query;
 
   let project = projects.find((p) => p.id === pid);
-
-  console.log(project?.history);
-
   let timeThisMonth = getTimeThisMonth(project?.history);
 
   if (!router.isFallback && !project?.id) {

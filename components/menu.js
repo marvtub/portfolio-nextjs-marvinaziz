@@ -40,9 +40,9 @@ function Menu({ visible, setMenuVisible , dark}) {
           SCHLIEßEN
         </div>
         <div
-          className={`left-side-menu relative flex flex-col xl:w-6/12 py-8 lg:px-36 px-12 w-screen justify-center bg-slate-200`}
+          className={`left-side-menu relative flex flex-col xl:w-6/12 py-8 lg:px-36 px-12 w-screen justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900`}
         >
-          <ul className="2xl:text-7xl text-4xl font-semibold  text-slate-500">
+          <ul className="2xl:text-7xl text-4xl font-semibold  text-slate-100">
             {menuLinks.map((el) => {
               if (el.name === "About" || el.name === "Impressum") {
                 return;
@@ -52,10 +52,6 @@ function Menu({ visible, setMenuVisible , dark}) {
                   <Link href={el.href}>
                     <motion.p
                       whileHover={{
-                        background:
-                          "linear-gradient(215deg, rgba(255,115,168,1) 0%, rgba(3,63,115,1) 100%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
                         x: "0.1em",
                         transition: {
                           duration: 0.3,

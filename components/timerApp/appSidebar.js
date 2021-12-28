@@ -12,7 +12,7 @@ function AppSidebar({backToMain}) {
 
   return (
     
-      <div className="sidebar w-4/12 bg-stone-800 h-screen py-48 overflow-y-scroll sticky top-0">
+      <div className="sidebar w-4/12 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 h-screen py-48 overflow-y-scroll sticky top-0">
       {projects.map((project) => {
         let hours = timeConvert(getTimeThisMonth(project.history))
 

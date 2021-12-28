@@ -46,10 +46,10 @@ function timeConvert(n) { // to Hours
 
     function convertTimeTill(n, goal){ // to tillHours
 
-        console.log("Minuten: ", n, "| Ziel: ", goal)
+        // console.log("Minuten: ", n, "| Ziel: ", goal)
         var goalMin = goal * 60;
         var timeTill = goalMin-n;
-        console.log("Minuten-Ziel: ", goalMin, "| Zeit bis dahin: ", timeTill) // min
+        // console.log("Minuten-Ziel: ", goalMin, "| Zeit bis dahin: ", timeTill) // min
         timeTill = timeConvert(timeTill);
 
         return timeTill;
